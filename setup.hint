@@ -1,5 +1,5 @@
 category: Audio Gnome
-requires: cygwin libglib2.0_0 libgtk2.0_0 libX11_6 python python-dbus python-gnome2 python-gobject2 python-gtk2 python-mpd python-tagpy
+requires: libglib2.0_0 libgtk2.0_0 libX11_6 python python-dbus python-gnome2 python-gobject2 python-gtk2 python-mpd python-tagpy
 sdesc: "GTK+ Music Player Daemon client"
 ldesc: "Sonata is an elegant GTK+ music client for the Music Player
 Daemon (MPD)."
