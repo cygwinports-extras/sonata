@@ -1,0 +1,24 @@
+Get mmkeys.dll out of the toplevel site-library dir.
+
+--- origsrc/sonata-1.6.2/setup.py	2009-03-17 21:23:09.000000000 -0500
++++ src/sonata-1.6.2/setup.py	2009-07-15 00:04:10.057269000 -0500
+@@ -72,7 +72,7 @@ setup(name='Sonata',
+         packages=["sonata", "sonata.plugins"],
+         package_dir={"sonata": "sonata/"},
+         ext_modules=[Extension(
+-        "mmkeys", ["mmkeys/mmkeyspy.c", "mmkeys/mmkeys.c", "mmkeys/mmkeysmodule.c"],
++        "sonata/mmkeys", ["mmkeys/mmkeyspy.c", "mmkeys/mmkeys.c", "mmkeys/mmkeysmodule.c"],
+         extra_compile_args=capture("pkg-config --cflags gtk+-2.0 pygtk-2.0").split(),
+         extra_link_args=capture("pkg-config --libs gtk+-2.0 pygtk-2.0").split()
+          ),],
+--- origsrc/sonata-1.6.2/sonata/main.py	2009-04-11 15:07:35.000000000 -0500
++++ src/sonata-1.6.2/sonata/main.py	2009-07-15 00:04:24.496239700 -0500
+@@ -727,7 +727,7 @@ class Base(object):
+ 		# Try to connect to mmkeys signals, if no dbus and gnome 2.18+
+ 		if not dbus.using_gnome_mediakeys():
+ 			try:
+-				import mmkeys
++				from sonata import mmkeys
+ 				# this must be an attribute to keep it around:
+ 				self.keys = mmkeys.MmKeys()
+ 				self.keys.connect("mm_prev", self.mpd_prev)

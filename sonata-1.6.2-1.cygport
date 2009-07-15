@@ -4,4 +4,4 @@ DESCRIPTION="PyGTK client for the Music Player Daemon"
 HOMEPAGE="http://sonata.berlios.de/"
 SRC_URI="mirror://berlios/sonata/${P}.tar.bz2"
 
-PATCH_URI="1.5.3-mmkeys.patch"
+PATCH_URI="1.6.2-mmkeys.patch"
