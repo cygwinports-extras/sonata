@@ -4,18 +4,18 @@ Sonata is an elegant GTK+ music client for the Music Player
 Daemon (MPD).
 
 Runtime requirements:
-  cygwin-1.7.0-50
-  libglib2.0_0-2.20.4-1
-  libgtk2.0_0-2.16.3-1
-  libX11_6-1.2.1-1
+  cygwin-1.7.1-1
+  libglib2.0_0-2.22.4-2
+  libgtk2.0_0-2.18.6-1
+  libX11_6-1.3.2-2
   python-2.5.4-10
   python-dbus-0.83.0-10
-  python-egg-2.25.3-1
-  python-gnome2-2.26.1-1
-  python-gobject2-2.16.1-10
-  python-gtk2-2.14.1-1
+  python-egg-2.27.0-1
+  python-gnome2-2.28.0-1
+  python-gobject2.0-2.20.0-1
+  python-gtk2.0-2.16.0-1
   python-mpd-0.2.1-10
-  python-tagpy-0.94.5-10
+  python-tagpy-0.94.7-1
 
 Canonical website:
   http://sonata.berlios.de/
@@ -26,161 +26,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack sonata-1.6.2-X-src.tar.bz2
+  unpack sonata-1.6.2.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./sonata-1.6.2-X.cygport all
+  cygport ./sonata-1.6.2.1-X.cygport all
 
 This will create:
-  /usr/src/sonata-1.6.2-X-src.tar.bz2
-  /usr/src/sonata-1.6.2-X.tar.bz2
+  /usr/src/sonata-1.6.2.1-X-src.tar.bz2
+  /usr/src/sonata-1.6.2.1-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
-
-  /usr/bin/sonata
-  /usr/lib/python2.5/site-packages/Sonata-1.6.2-py2.5.egg-info
-  /usr/lib/python2.5/site-packages/sonata/__init__.py
-  /usr/lib/python2.5/site-packages/sonata/__init__.pyc
-  /usr/lib/python2.5/site-packages/sonata/__init__.pyo
-  /usr/lib/python2.5/site-packages/sonata/about.py
-  /usr/lib/python2.5/site-packages/sonata/about.pyc
-  /usr/lib/python2.5/site-packages/sonata/about.pyo
-  /usr/lib/python2.5/site-packages/sonata/artwork.py
-  /usr/lib/python2.5/site-packages/sonata/artwork.pyc
-  /usr/lib/python2.5/site-packages/sonata/artwork.pyo
-  /usr/lib/python2.5/site-packages/sonata/audioscrobbler.py
-  /usr/lib/python2.5/site-packages/sonata/audioscrobbler.pyc
-  /usr/lib/python2.5/site-packages/sonata/audioscrobbler.pyo
-  /usr/lib/python2.5/site-packages/sonata/breadcrumbs.py
-  /usr/lib/python2.5/site-packages/sonata/breadcrumbs.pyc
-  /usr/lib/python2.5/site-packages/sonata/breadcrumbs.pyo
-  /usr/lib/python2.5/site-packages/sonata/cli.py
-  /usr/lib/python2.5/site-packages/sonata/cli.pyc
-  /usr/lib/python2.5/site-packages/sonata/cli.pyo
-  /usr/lib/python2.5/site-packages/sonata/config.py
-  /usr/lib/python2.5/site-packages/sonata/config.pyc
-  /usr/lib/python2.5/site-packages/sonata/config.pyo
-  /usr/lib/python2.5/site-packages/sonata/consts.py
-  /usr/lib/python2.5/site-packages/sonata/consts.pyc
-  /usr/lib/python2.5/site-packages/sonata/consts.pyo
-  /usr/lib/python2.5/site-packages/sonata/current.py
-  /usr/lib/python2.5/site-packages/sonata/current.pyc
-  /usr/lib/python2.5/site-packages/sonata/current.pyo
-  /usr/lib/python2.5/site-packages/sonata/dbus_plugin.py
-  /usr/lib/python2.5/site-packages/sonata/dbus_plugin.pyc
-  /usr/lib/python2.5/site-packages/sonata/dbus_plugin.pyo
-  /usr/lib/python2.5/site-packages/sonata/img.py
-  /usr/lib/python2.5/site-packages/sonata/img.pyc
-  /usr/lib/python2.5/site-packages/sonata/img.pyo
-  /usr/lib/python2.5/site-packages/sonata/info.py
-  /usr/lib/python2.5/site-packages/sonata/info.pyc
-  /usr/lib/python2.5/site-packages/sonata/info.pyo
-  /usr/lib/python2.5/site-packages/sonata/library.py
-  /usr/lib/python2.5/site-packages/sonata/library.pyc
-  /usr/lib/python2.5/site-packages/sonata/library.pyo
-  /usr/lib/python2.5/site-packages/sonata/main.py
-  /usr/lib/python2.5/site-packages/sonata/main.pyc
-  /usr/lib/python2.5/site-packages/sonata/main.pyo
-  /usr/lib/python2.5/site-packages/sonata/misc.py
-  /usr/lib/python2.5/site-packages/sonata/misc.pyc
-  /usr/lib/python2.5/site-packages/sonata/misc.pyo
-  /usr/lib/python2.5/site-packages/sonata/mmkeys.dll
-  /usr/lib/python2.5/site-packages/sonata/mpdhelper.py
-  /usr/lib/python2.5/site-packages/sonata/mpdhelper.pyc
-  /usr/lib/python2.5/site-packages/sonata/mpdhelper.pyo
-  /usr/lib/python2.5/site-packages/sonata/playlists.py
-  /usr/lib/python2.5/site-packages/sonata/playlists.pyc
-  /usr/lib/python2.5/site-packages/sonata/playlists.pyo
-  /usr/lib/python2.5/site-packages/sonata/plugins/__init__.py
-  /usr/lib/python2.5/site-packages/sonata/plugins/__init__.pyc
-  /usr/lib/python2.5/site-packages/sonata/plugins/__init__.pyo
-  /usr/lib/python2.5/site-packages/sonata/plugins/localmpd.py
-  /usr/lib/python2.5/site-packages/sonata/plugins/localmpd.pyc
-  /usr/lib/python2.5/site-packages/sonata/plugins/localmpd.pyo
-  /usr/lib/python2.5/site-packages/sonata/plugins/test.py
-  /usr/lib/python2.5/site-packages/sonata/plugins/test.pyc
-  /usr/lib/python2.5/site-packages/sonata/plugins/test.pyo
-  /usr/lib/python2.5/site-packages/sonata/pluginsystem.py
-  /usr/lib/python2.5/site-packages/sonata/pluginsystem.pyc
-  /usr/lib/python2.5/site-packages/sonata/pluginsystem.pyo
-  /usr/lib/python2.5/site-packages/sonata/preferences.py
-  /usr/lib/python2.5/site-packages/sonata/preferences.pyc
-  /usr/lib/python2.5/site-packages/sonata/preferences.pyo
-  /usr/lib/python2.5/site-packages/sonata/scrobbler.py
-  /usr/lib/python2.5/site-packages/sonata/scrobbler.pyc
-  /usr/lib/python2.5/site-packages/sonata/scrobbler.pyo
-  /usr/lib/python2.5/site-packages/sonata/streams.py
-  /usr/lib/python2.5/site-packages/sonata/streams.pyc
-  /usr/lib/python2.5/site-packages/sonata/streams.pyo
-  /usr/lib/python2.5/site-packages/sonata/svnversion.py
-  /usr/lib/python2.5/site-packages/sonata/svnversion.pyc
-  /usr/lib/python2.5/site-packages/sonata/svnversion.pyo
-  /usr/lib/python2.5/site-packages/sonata/tagedit.py
-  /usr/lib/python2.5/site-packages/sonata/tagedit.pyc
-  /usr/lib/python2.5/site-packages/sonata/tagedit.pyo
-  /usr/lib/python2.5/site-packages/sonata/tray.py
-  /usr/lib/python2.5/site-packages/sonata/tray.pyc
-  /usr/lib/python2.5/site-packages/sonata/tray.pyo
-  /usr/lib/python2.5/site-packages/sonata/ui.py
-  /usr/lib/python2.5/site-packages/sonata/ui.pyc
-  /usr/lib/python2.5/site-packages/sonata/ui.pyo
-  /usr/lib/python2.5/site-packages/sonata/version.py
-  /usr/lib/python2.5/site-packages/sonata/version.pyc
-  /usr/lib/python2.5/site-packages/sonata/version.pyo
-  /usr/share/applications/sonata.desktop
-  /usr/share/doc/sonata/COPYING
-  /usr/share/doc/sonata/README
-  /usr/share/doc/sonata/TODO
-  /usr/share/locale/ar/LC_MESSAGES/sonata.mo
-  /usr/share/locale/be@latin/LC_MESSAGES/sonata.mo
-  /usr/share/locale/ca/LC_MESSAGES/sonata.mo
-  /usr/share/locale/cs/LC_MESSAGES/sonata.mo
-  /usr/share/locale/da/LC_MESSAGES/sonata.mo
-  /usr/share/locale/de/LC_MESSAGES/sonata.mo
-  /usr/share/locale/el_GR/LC_MESSAGES/sonata.mo
-  /usr/share/locale/es/LC_MESSAGES/sonata.mo
-  /usr/share/locale/et/LC_MESSAGES/sonata.mo
-  /usr/share/locale/fi/LC_MESSAGES/sonata.mo
-  /usr/share/locale/fr/LC_MESSAGES/sonata.mo
-  /usr/share/locale/it/LC_MESSAGES/sonata.mo
-  /usr/share/locale/ja/LC_MESSAGES/sonata.mo
-  /usr/share/locale/nl/LC_MESSAGES/sonata.mo
-  /usr/share/locale/pl/LC_MESSAGES/sonata.mo
-  /usr/share/locale/pt_BR/LC_MESSAGES/sonata.mo
-  /usr/share/locale/ru/LC_MESSAGES/sonata.mo
-  /usr/share/locale/sk/LC_MESSAGES/sonata.mo
-  /usr/share/locale/sl/LC_MESSAGES/sonata.mo
-  /usr/share/locale/sv/LC_MESSAGES/sonata.mo
-  /usr/share/locale/tr/LC_MESSAGES/sonata.mo
-  /usr/share/locale/uk/LC_MESSAGES/sonata.mo
-  /usr/share/locale/zh_CN/LC_MESSAGES/sonata.mo
-  /usr/share/locale/zh_TW/LC_MESSAGES/sonata.mo
-  /usr/share/man/man1/sonata.1.gz
-  /usr/share/pixmaps/sonata-album.png
-  /usr/share/pixmaps/sonata-artist.png
-  /usr/share/pixmaps/sonata-case.png
-  /usr/share/pixmaps/sonata-stock_volume-max.png
-  /usr/share/pixmaps/sonata-stock_volume-med.png
-  /usr/share/pixmaps/sonata-stock_volume-min.png
-  /usr/share/pixmaps/sonata-stock_volume-mute.png
-  /usr/share/pixmaps/sonata.png
-  /usr/share/pixmaps/sonata_disconnect.png
-  /usr/share/pixmaps/sonata_large.png
-  /usr/share/pixmaps/sonata_pause.png
-  /usr/share/pixmaps/sonata_play.png
-  /usr/share/pixmaps/sonatacd.png
-  /usr/share/pixmaps/sonatacd_large.png
-  /usr/share/sonata/CHANGELOG
-  /usr/share/sonata/README
-  /usr/share/sonata/TODO
-  /usr/share/sonata/TRANSLATORS
-
-------------------
-
 Port Notes:
+
+----- version 1.6.2.1-1 -----
+Version bump.
 
 ----- version 1.6.2-1 -----
 Initial release for Cygwin 1.7.
