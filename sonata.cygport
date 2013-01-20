@@ -1,0 +1,13 @@
+inherit distutils
+
+NAME="sonata"
+VERSION=1.6.2.1
+RELEASE=2
+CATEGORY="Audio"
+SUMMARY="GTK+ Music Player Daemon client"
+DESCRIPTION="Sonata is an elegant GTK+ music client for the Music Player
+Daemon (MPD)."
+HOMEPAGE="http://sonata.berlios.de/"
+SRC_URI="mirror://berlios/sonata/${P}.tar.bz2"
+
+PATCH_URI="1.6.2-mmkeys.patch"
